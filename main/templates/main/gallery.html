@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="text-center">
+  <h1>Our Gallery</h1>
+  <p class="lead">Peaceful moments from SVAYSS life</p>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-4">
+    <img src="{% static 'main/gallery/yoga.jpg' %}" class="img-fluid rounded mb-2" alt="Yoga Image">
+    <p class="text-center">Morning Yoga Sessions</p>
+  </div>
+  <div class="col-md-4">
+    <img src="{% static 'main/gallery/ram.jpg' %}" class="img-fluid rounded mb-2" alt="Ram Darbar">
+    <p class="text-center">Shri Ram Darshan</p>
+  </div>
+  <div class="col-md-4">
+    <img src="{% static 'main/gallery/spritual.jpg' %}" class="img-fluid rounded mb-2" alt="Spiritual Scene">
+    <p class="text-center">Spiritual Gatherings</p>
+  </div>
+</div>
+
+{% endblock %}
+<!-- This is the gallery page of the SVAYSS Hostel website. It showcases images of yoga sessions, spiritual gatherings, and the serene environment of the hostel. -->
+<!-- The page is designed to highlight the peaceful and spiritual aspects of life at SVAYSS.

@@ -1,0 +1,90 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Section -->
+<div class="bg-light p-5 rounded text-center">
+  <img src="{% static 'main/logo.png.jpg' %}" height="80" alt="Logo">
+  <h1 class="mt-3">Welcome to SVAYSS Hostel</h1>
+  <p class="lead">Swami Vivekanand Awasiya Yog Shodh Sanshan – A place of peace, purpose & progress.</p>
+</div>
+
+
+<!-- About Section -->
+<div class="row my-5 align-items-center">
+  <div class="col-md-6">
+    <img src="https://source.unsplash.com/600x400/?yoga,ashram" class="img-fluid rounded shadow">
+  </div>
+  <div class="col-md-6">
+    <h2>About Us</h2>
+    <p>
+      SVAYSS offers a serene environment blending modern facilities with ancient yogic practices. 
+      Students and researchers find peace, discipline, and inspiration here.
+    </p>
+    <a href="/about/" class="btn btn-outline-primary mt-2">Learn More</a>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="text-center my-5">
+  <h2>What We Offer</h2>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <i class="bi bi-house-door-fill fs-1 text-primary"></i>
+      <h5 class="mt-3">Comfortable Rooms</h5>
+      <p>Well-maintained and peaceful accommodation with all basic amenities.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-heart-pulse-fill fs-1 text-danger"></i>
+      <h5 class="mt-3">Daily Yoga Practice</h5>
+      <p>Experienced instructors conduct daily yoga and meditation sessions.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-journal-text fs-1 text-success"></i>
+      <h5 class="mt-3">Research Environment</h5>
+      <p>Focus on spiritual and health research under guided mentorship.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Gallery Preview Section -->
+<div class="bg-light py-5">
+  <div class="text-center">
+    <h2>Gallery Preview</h2>
+    <p class="lead">A glimpse of life at SVAYSS</p>
+  </div>
+
+  <div class="row mt-4 justify-content-center">
+    <div class="col-md-3">
+      <img src="{% static 'main/gallery/yoga.jpg' %}" class="img-fluid rounded shadow-sm mb-3" alt="Yoga Preview">
+    </div>
+    <div class="col-md-3">
+      <img src="{% static 'main/gallery/ram.jpg' %}" class="img-fluid rounded shadow-sm mb-3" alt="Ram Preview">
+    </div>
+    <div class="col-md-3">
+      <img src="{% static 'main/gallery/spritual.jpg' %}" class="img-fluid rounded shadow-sm mb-3" alt="Spiritual Preview">
+    </div>
+  </div>
+
+  <div class="text-center mt-3">
+    <a href="/gallery/" class="btn btn-primary">View Full Gallery</a>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="text-center my-5">
+  <h2>Get in Touch</h2>
+  <p>Email: svayss@example.com</p>
+  <p>Phone: +91-9876543210</p>
+  <a href="/contact/" class="btn btn-outline-dark">Contact Page</a>
+</div>
+
+<!-- Footer -->
+<hr>
+<footer class="text-center text-muted mb-3">
+  &copy; 2025 SVAYSS Hostel | Developed by Arpit Mishra
+</footer>
+
+{% endblock %}
+<!-- This is the main index page of the SVAYSS Hostel website. It includes a hero section, about section, features, gallery preview, and contact information. -->
+<!-- The page is designed to be responsive and user-friendly, showcasing the hostel's offerings and inviting

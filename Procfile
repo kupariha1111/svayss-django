@@ -1,0 +1,1 @@
+web: gunicorn svayss_site.wsgi
